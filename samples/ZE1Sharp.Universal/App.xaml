@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="ZE1Sharp.Universal.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ZE1Sharp.Universal"
+    RequestedTheme="Light">
+
+</Application>
