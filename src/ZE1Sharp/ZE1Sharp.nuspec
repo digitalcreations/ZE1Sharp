@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>ZE1Sharp</id>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <title>Z Camera E-1 .NET API</title>
     <authors>vegardlarsen</authors>
     <owners>vegardlarsen</owners>
     <projectUrl>http://github.com/digitalcreations/ZE1Sharp</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Implementation of the Z Camera E-1 API for .NET</description>
-    <releaseNotes>Initial release</releaseNotes>
+    <releaseNotes>Fix URL encoding for certain settings</releaseNotes>
     <copyright>Copyright 2015 Digital Creations AS.</copyright>
     <tags>camera timelapse api remote control</tags>
     <dependencies>
@@ -19,6 +19,6 @@
   </metadata>
 
   <files>
-    <file src="..\..\artifacts\release\ZE1Sharp.dll" target="lib\portable-net451+netcore451\ZE1Sharp.dll"></file>
+    <file src="..\..\artifacts\release\ZE1Sharp.dll" target="lib\portable-net451+win81\ZE1Sharp.dll"></file>
   </files>
 </package>
