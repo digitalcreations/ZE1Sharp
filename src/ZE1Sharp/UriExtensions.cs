@@ -19,9 +19,9 @@ namespace ZE1Sharp
             foreach (var parameter in parameters)
             {
                 stringBuilder.Append(separator);
-                stringBuilder.Append(WebUtility.UrlEncode(parameter.Key));
+                stringBuilder.Append(Uri.EscapeUriString(parameter.Key));
                 stringBuilder.Append("=");
-                stringBuilder.Append(WebUtility.UrlEncode(parameter.Value));
+                stringBuilder.Append(Uri.EscapeUriString(parameter.Value));
                 separator = "&";
             }
             return new Uri(uri + stringBuilder.ToString());
@@ -39,9 +39,9 @@ namespace ZE1Sharp
             foreach (var parameter in parameters)
             {
                 stringBuilder.Append(separator);
-                stringBuilder.Append(WebUtility.UrlEncode(parameter.Key));
+                stringBuilder.Append(Uri.EscapeUriString(parameter.Key));
                 stringBuilder.Append("=");
-                stringBuilder.Append(WebUtility.UrlEncode(parameter.Value));
+                stringBuilder.Append(Uri.EscapeUriString(parameter.Value));
                 separator = "&";
             }
 
@@ -53,9 +53,9 @@ namespace ZE1Sharp
             var stringBuilder = new StringBuilder();
             var separator = path.Contains("?") ? "&" : "?";
             stringBuilder.Append(separator);
-            stringBuilder.Append(WebUtility.UrlEncode(key));
+            stringBuilder.Append(Uri.EscapeUriString(key));
             stringBuilder.Append("=");
-            stringBuilder.Append(WebUtility.UrlEncode(value));
+            stringBuilder.Append(Uri.EscapeUriString(value));
             return path + stringBuilder;
         }
     }
